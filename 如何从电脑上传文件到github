@@ -1,0 +1,10 @@
+1.创建一个目录，设为本地仓库，命令：git init
+
+2.获取电脑的公钥，在git命令行窗口中输入：cd ~/.ssh/,如果提示没有.ssh文件或目录，就创建mkdir .ssh 然后输入 git config --global user.name "用户名"，git config --global user.eamil "邮箱"，用户名和邮箱可为你的github的用户名和邮箱，如果提示有的话，直接输入 ssh-keygen -t rsa -C "邮箱" 然后直接回车三次
+
+3.然后在.ssh目录下有id_rsa.pub文件，里面的就是公钥，然后打开复制,到github的设置/ssh and GPG key里，添加ssh公钥,标题自取，内容为公钥。
+
+4.然后在命令行窗口的本地仓库路径下输入 git remote @github.com/用户名/仓库名.git
+建立远程连接
+
+ 
